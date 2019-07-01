@@ -23,7 +23,7 @@ var arr = [10, 11, 12, 13, 14, "Ram", "Hari", "sita"]
 console.log(arr[arr.length-1])
 
 for(var a = 0; a < arr.length; a++){
-    console.log(arr[a])
+    console.log(a, arr[a])
 }
 
 var b = 0;
@@ -52,6 +52,12 @@ for( var a = 1; a <= 50; a++){
     console.log(test.push(a))
 }
 
+for( var a = 1; a <= 50; a++){
+    test.push(a)
+}
+console.log(test)
+
+
 //another method to push directly to 
 
 for(var b = 0; b < 100; b++){
@@ -62,10 +68,18 @@ for(var b = 0; b < 100; b++){
 }
 console.log(test)
 
-
 var example = []
 
+//This is just an example
 for(var h = 1; h <= 50; h++){
     console.log(example.push(h, h * 2))
+}
+console.log(example)
 
+
+for(var h = 1; h <= 50; h++){
+    console.log(example.push(h))
+    if(h % 3 == 0 ){
+        console.log("Odd Number")
+    }
 }
